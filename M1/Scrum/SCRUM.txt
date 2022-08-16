@@ -1,0 +1,5 @@
+Product Backlog: lista de requisitos do cliente.
+
+Stakeholder: usuário do sistema, o cliente, ou até mesmo o patrocinador do projeto.
+
+Product Owner (PO): Representante do cliente que valida todas as funcionalidades para garantir o cumprimento das regras de negócio.
