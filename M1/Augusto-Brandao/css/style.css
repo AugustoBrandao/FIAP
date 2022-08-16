@@ -1,0 +1,340 @@
+@charset "UTF-8";
+
+/* Kanit - H1 - H3*/
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap');
+
+/* Rajdhani */
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600&display=swap');
+
+:root
+{
+    --azul1: #48A0E9;
+    --azul2: #2F76B2;
+    --azul3: #103F66;
+    --vermelho: #DB162F;
+    --verde: #00A896;
+    --cinza: #0d3241;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{ background-color: lightgray;}
+
+nav {
+    /* position: fixed; */
+    display: flex; /* Logo e lista inline*/
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Rajdhani', sans-serif;
+    background: black;
+    height: 8vh; /* vh = Viewport - unidade responsiva*/
+    border: 2px;
+    padding: 5px;
+    width: 99%;
+}
+
+nav > a{
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+li > a{
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.logo{
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.sublogo{ /* FRONT-END DEVELOPER */
+    font-size: 18px;
+    text-transform: uppercase;
+    color: rgb(252, 193, 41);
+}
+
+.nav-list{
+    list-style: none;
+    display: flex; /* colocar itens lado a lado */
+}
+
+.nav-list li{
+    letter-spacing: 3px;
+    margin-left: 30px;
+    padding: 20px;
+}
+
+.mobile-menu {
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: white;
+    margin: 8px;
+}
+
+h1{ font-family: 'Kanit'; text-transform: uppercase; font-weight: bolder;}
+h2{ font-family: 'Kanit'; text-transform: uppercase; font-weight: bolder;}
+h3{ font-family: 'Kanit'; text-transform: uppercase; font-weight: bolder;}
+p { font-family: 'Rajdhani'; font-weight:500;}
+
+header{ 
+    display: flex; 
+    height: 28%; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.274);
+}
+
+header img{
+    width: 100%;
+    height: 100%;  
+    max-width: 3840px;
+    max-height: 767px;
+    object-fit: contain; /*cover*/
+}
+
+main{
+    width: 90%;
+    height: 1580px;
+    margin: auto;
+    background-color: #f5f5f5;
+}
+
+#sobre{
+    padding: 60px ;
+    text-align: justify;
+    justify-content: center;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    display: flex;
+}
+
+#foto img{
+    margin-left: 50px;
+    width: 360px;
+    height: 410px;
+}
+
+#texto{
+    margin-left: 50px;
+}
+
+#texto h1{
+    margin: 20px;
+    font-weight: bolder;
+    font-family: 'Rajdhani';
+}
+
+#sobre p{
+    margin: 20px;
+    padding-right: 10%;
+    margin-bottom: 35px;
+}
+
+#btn>a{
+    height: 80px;
+    width: 185px;
+    padding: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    border: 2px solid black;
+    font-weight: bolder;
+    font-family: 'Rajdhani';
+    color: white;
+    background-color: var(--verde);
+    margin-left: 20px;
+    font-size: 1.3em;
+    margin-bottom: 25px;
+}
+
+#btn > a:hover{
+    cursor: pointer;
+    background-color: var(--cinza);
+}
+
+#habilidades{
+    width: 100%;
+    padding: 15px;
+}
+
+#habilidades h1{
+    font-family: 'Rajdhani';
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#habilidades div{
+    background-color: var(--cinza);
+    color: white;
+    font-family: 'Rajdhani';
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.242);
+    font-weight: bold;
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    width: 8%;
+    height: 250px;
+    margin: 15px;
+    padding: 29px;
+}
+
+#habilidades div:hover{
+    cursor: pointer;
+    border: 3px;
+    border-style: solid;
+    border-color: #80DEEA;
+}
+
+#habilidades img{
+    height: 35%;
+    width: 100%;
+}
+
+div > h3{
+    font-family: 'Rajdhani';
+    font-weight: bolder;
+    font-size: 1.3em;
+}
+
+#habilidades p{
+    font-family: 'Rajdhani';
+    font-weight: 400;
+}
+
+#projetos{
+    position: relative;
+    width: 100%;
+    height: 22%;
+    text-align: center;
+    background-color:var(--cinza);
+    padding-top: 25px;
+}
+
+#projetos h1{ font-family: 'Rajdhani'; font-weight:900; color: #FBB823; }
+#projetos h3{ font-family: 'Rajdhani'; font-weight:900; color: white;}
+
+#contato{ margin-top:10px; width: 100%; height:12%; background-color: var(--verde); text-align: center;}
+#contato h1{font-family: 'Rajdhani'; color:white; padding-top: 30px;}
+#contato img:hover{cursor: pointer; }
+
+
+footer{ width: 100%; height: 100px; color: white; background-color: black; }
+footer p{ text-align: center; font-family: 'Rajdhani'; padding-top: 50px;}
+
+/* RESPONSIVIDADE */
+@media (max-width: 550px) {  /* Small*/
+
+    main{
+        width: 100%;
+    }
+
+    .nav-list{
+        position: absolute;
+        top: 8vh;
+        right: -32;
+        width: 50vw; /* view */
+        height: 92vh;
+        background: black;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(100%);
+        visibility: hidden;
+    }
+
+    #sobre{ display: block;padding: 20px;}
+    #sobre h1 { margin: auto; margin-bottom: 10px; margin-top: 10px;}
+    #sobre p { margin-top: 10px; margin: auto; padding-right: 60px; margin-bottom: 50px;}
+    #foto img{ height:200px; width: 185px; margin-left: 20%;}
+    #sobre a { margin-top: 15px;}
+    
+    #habilidades { height: 2200px; width: 92%; background-color: #f5f5f5;}
+    #habilidades div { width: 70%; height: 240px; align-items: center; padding-bottom: 55px;}
+    #habilidades img { height: 87%;width: 85%;}
+
+    #projetos { height: 25%;}
+    #projetos h1 { font-size: 1.6em;}
+    #projetos h3 { font-size: 1.0em;}
+
+    footer{position: absolute; top:4000px;}
+}
+
+@media (min-width: 551px) and (max-width: 766px){  /* Small - lay down */
+    main{
+        width: 100%;
+    }
+    nav{ width:100%;}
+    header, main{ width:100%;}
+    main{margin-left: 0px;}
+
+    .nav-list{
+        position: absolute;
+        top: 8vh;
+        right: -32;
+        width: 50vw; /* view */
+        height: 92vh;
+        background: black;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(100%);
+        visibility: hidden;
+    }
+    
+    #sobre{ display: block;padding: 20px;}
+    #foto img{ height:200px; width: 185px; margin-left: 35%;}
+    #sobre p { margin-top: 10px; margin: auto; padding-right: 60px; margin-bottom: 50px;}
+    #sobre a { margin-left: 32%;}
+
+    #habilidades div {width: 19%; height: 120px; align-items: center; padding-bottom: 45px;}
+    #habilidades img { height: 87%;width: 85%; margin-bottom: 15px;}
+
+    footer{position: absolute; top:2000px;}
+    footer p{ margin-left: 0px;}
+}
+
+@media (min-width: 767px) and (max-width: 1024px){ /* Medium - tablet*/
+    .nav-list{
+        position: absolute;
+        top: 8vh;
+        right: -32;
+        width: 50vw; /* view */
+        height: 92vh;
+        background: black;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(100%);
+        visibility: hidden;
+    }
+
+    #sobre{ display: block;padding: 20px;}
+    #foto img{ height:200px; width: 185px; margin-left: 35%;}
+    #sobre h1 { margin-left: 25%; margin-bottom: 10px; margin-top: 50px;}
+    #sobre a { margin-top: 15px; margin-left: 30%;}
+
+    #habilidades div { width: 19%;}
+    #habilidades img { height: 60%;width: 110%;}
+
+    footer{position: absolute; top:2250px;}
+}
+
+@media (min-width: 1025px) and (max-width: 1500px){ 
+    /*  Large - Desktops */
+    #habilidades div { width: 8%;}
+}
+
+@media (min-width: 1501px) and (max-width: 2000px){ 
+    main{
+        width: 90%;
+        height: 1550px;
+    }
+    #habilidades div { width: 10.95%; height: 15%;}
+}
